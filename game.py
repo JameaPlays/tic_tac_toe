@@ -60,7 +60,7 @@ def input_move(player, board, player_symbols):
 
 
 def check_game_state(player, board, turn_number):
-    # Check for win
+    """This function checks for whether there is a win or a draw after every turn."""
     # Check horizontal
     if board[0] == board[1] == board[2] == player.symbol:
         return "win"
