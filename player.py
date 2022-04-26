@@ -6,6 +6,7 @@ class Player:
         self.symbol = symbol
         self.turn_order = None
         self.placements = []
+        self.score = 0
 
     def register_player(number: int):
         """Creates two players, asking for player name and the symbol to be used."""
