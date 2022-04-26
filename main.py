@@ -17,7 +17,7 @@ player_symbols = [player.symbol for player in player_data.values()]
 player_data = turn_order(player_data)
 
 while game_running:
-    print("\n" * 3)
+    print("\n" * 1)
     player = current_player(turn_number, player_data)
     print(f"Turn {turn_number}")
     show_board(board)
@@ -32,3 +32,4 @@ while game_running:
     else:
         print(f"{player.name} won!!! Congratulations!")
         game_running = False
+    print("\n" * 3)
